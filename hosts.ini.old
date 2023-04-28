@@ -1,0 +1,15 @@
+[all:vars]
+ansible_connection = network_cli
+ansible_network_os = eos
+ansible_become = yes
+ansible_become_method = enable
+ansible_python_interpreter = /usr/bin/python3
+ansible_user = gregg
+ansible_password = Arista123!
+# ansible_ssh_private_key_file = ~/ACE5/ace-key
+[spines_DC1]
+spine[1:3]
+[leafs_DC1]
+leaf[1:4]
+borderleaf[1:2]
+
